@@ -1,0 +1,38 @@
+.client {
+  display: flex;
+}
+
+.client__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  color: var(--icon-grey-color);
+  background-color: var(--primary-white-colour);
+
+  border: 1px solid var(--icon-grey-color);
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-colour);
+    border: 1px solid var(--accent-text-colour);
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}

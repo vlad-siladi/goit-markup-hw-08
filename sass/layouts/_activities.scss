@@ -1,0 +1,34 @@
+.activity {
+  display: flex;
+}
+
+.activity__item {
+  margin-right: 30px;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.activity__block {
+  position: absolute;
+  width: 370px;
+  bottom: 0;
+  right: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.activity__title {
+  padding: 27px 0;
+  margin: 0;
+
+  color: var(--primary-white-colour);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
