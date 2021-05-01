@@ -1,13 +1,29 @@
 .btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
+
 .btn__item {
   margin-right: 8px;
+  margin-bottom: 8px;
+
+  // &:nth-child(n + 4) {
+  //   margin-bottom: 0;
+  // }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 

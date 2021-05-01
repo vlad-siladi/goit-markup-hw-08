@@ -6,10 +6,23 @@
 }
 
 .portfolio-ection__item {
-  flex-basis: calc((100% - 90px) / 3);
+  border: 1px solid #eee;
+  border-top: none;
 
   margin-left: 30px;
   margin-bottom: 30px;
+  max-width: 450px;
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
 }
 
 .portfolio-ection__card {
@@ -17,7 +30,6 @@
 }
 
 .card {
-  width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .portfolio-ection__card:hover &,
@@ -63,8 +75,8 @@
 }
 
 .card__meta {
-  border: 1px solid #eee;
-  border-top: none;
+  // border: 1px solid #eee;
+  // border-top: none;
   padding: 24px 20px;
 }
 

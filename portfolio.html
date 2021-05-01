@@ -12,44 +12,94 @@
 </head>
 <body>
     <!--Site header -->
-    <header class="page-header">
-        <div class="page-header__block container">
-            <nav class="page-header__nav">
-                <a href="" class="logo">Web<span class="page-header__logo">Studio</span></a>
-
-                <ul class="site-nav list">
-                    <li class="site-nav__item">
-                        <a href="./index.html" class="site-nav__link">Студия</a>
+        <header class="page-header">
+            <div class="page-header__block container">
+                <nav class="page-header__nav">
+                    <a href="" class="logo">Web<span class="page-header__logo">Studio</span></a>
+        
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link ">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link site-nav__link--current">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <ul class="auth list">
+                    <li class="auth__item">
+                        <a href="mailto:info@devstudio.com" class="auth__link">
+                            <svg class="auth__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="site-nav__item">
-                        <a href="" class="site-nav__link site-nav__link--current">Портфолио</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="" class="site-nav__link">Контакты</a>
+                    <li class="auth__item">
+                        <a href="tel:+380961111111" class="auth__link">
+                            <svg class="auth__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-
-            <ul class="auth list">
-                <li class="auth__item">
-                    <a href="mailto:info@devstudio.com" class="auth__link">
-                        <svg class="auth__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
+        
+                <button class="menu-button" data-menu-button>
+                    <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu-button__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+                        <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+        
+            </div>
+        
+        </header>
+        
+        <div class="mobile-menu" data-menu>
+            <ul class="menu list">
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__link">Студия</a>
                 </li>
-                <li class="auth__item">
-                    <a href="tel:+380961111111" class="auth__link">
-                        <svg class="auth__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
+                <li class="menu__item">
+                    <a href="" class="menu__link menu__link--current">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Контакты</a>
                 </li>
             </ul>
+        
+            <ul class="mobile-auth list">
+                <li class="mobile-auth__tel">
+                    <a href="tel:+380961111111" class="mobile-auth__tel"></a>+38 096 111 11 11
+                </li>
+                <li class="mobile-auth__mail">
+                    <a href="mailto:info@devstudio.com" class="mobile-auth__mail"></a>info@devstudio.com
+                </li>
+            </ul>
+        
+            <ul class="mobile-social list">
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">LinkedIn</a>
+                </li>
+            </ul>
+        
+        
         </div>
-    </header>
+
     <!--portfolio -->
     <main>
         <!--portfolio button -->
@@ -72,8 +122,8 @@
                     <li class="btn__item">
                         <button type="button" class="btn__link">Маркетинг</button>
                     </li>
-                </ul>
-                <!--portfolio img  -->
+                </ul> 
+                <!-- portfolio img -->
 
                 <ul class="portfolio-ection list">
                     <li class="portfolio-ection__item">
@@ -245,7 +295,8 @@
     <!--footer-->
     <footer class="footer">
         <div class="footer__content container">
-    
+
+            <div class="footer__tablet">
             <div class="footer__box">
                 <a href="" class="logo">Web<span class="footer__logo">Studio</span> </a>
                 <address class="footer__address">
@@ -261,7 +312,7 @@
                 </address>
             </div>
     
-            <div class="footer__box">
+            <div class="footer__box footer__blok">
                 <p class="footer__title">присоединяйтесь</p>
     
                 <ul class="icon list">
@@ -296,6 +347,7 @@
                 </ul>
     
             </div>
+            </div>
     
             <div class="footer__block">
                 <p class="footer__title">Подпишитесь на рассылку</p>
@@ -316,6 +368,7 @@
         </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

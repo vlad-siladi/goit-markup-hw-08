@@ -49,9 +49,55 @@
                     </a>
                 </li>
             </ul>
+
+            <button class="menu-button" data-menu-button>
+                <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+                    <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
                 
         </div>
+        
     </header> 
+
+            <div class="mobile-menu" data-menu>
+                <ul class="menu list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link  menu__link--current">Студия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./portfolio.html" class="menu__link">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-auth list">
+                    <li class="mobile-auth__tel">
+                        <a href="tel:+380961111111" class="mobile-auth__tel"></a>+38 096 111 11 11</li>
+                    <li class="mobile-auth__mail">
+                        <a href="mailto:info@devstudio.com" class="mobile-auth__mail"></a>info@devstudio.com</li>
+                </ul>
+
+                <ul class="mobile-social list">
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link" target="_blank" rel="noopener noreferer">LinkedIn</a>
+                    </li>
+                </ul>
+
+
+            </div>
 
     <main>
         <!--Hero-->
@@ -64,50 +110,42 @@
             </div>
         </section>
         <!--features-->
-        <section class="section">
+         <section class="section">
             <div class="container ">
                 <ul class="feature list">
                     <li class="feature__item feature__antena">
                         <h3 class="feature__title">Внимание к деталям</h3>
                         <p class="feature__text">
-                            Идейные соображения, а также
-                            начало повседневной работы по
-                            формированию позиции.
+                            Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
                     <li class="feature__item feature__clock">
                         <h3 class="feature__title">Пунктуальность</h3>
                         <p class="feature__text">
-                            Задача организации, в особенности
-                            же рамки и место обучения кадров
-                            влечет за собой.
+                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
                     <li class="feature__item feature__diagram">
                         <h3 class="feature__title">Планирование</h3>
                         <p class="feature__text">
-                            Равным образом консультация с
-                            широким активом в значительной
-                            степени обуславливает.
+                            Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
                     <li class="feature__item feature__astronaut">
                         <h3 class="feature__title">Современные технологии</h3>
                         <p class="feature__text">
-                            Значимость этих проблем настолько
-                            очевидна, что реализация плановых
-                            заданий.
+                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
         <!--Activities-->
-        <section class="section-no-padding">
+        <section class="activity section-no-padding">
             <div class="container">
                 <h2 class="heading">Чем мы занимаемся</h2>
 
-                <ul class="activity list">
+                <ul class="activity__set list">
                     <li class="activity__item">
                         <img src="./images/workspace.jpg" alt="рабочее место" width="370">
                         <div class="activity__block">
@@ -130,7 +168,7 @@
             </div>
         </section>
         <!--Team-->
-        <section class="section team">
+         <section class="section team">
             <div class="container">
                 <h2 class="heading">Наша команда</h2>
 
@@ -304,7 +342,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
         <!--clients-->  
         <section class="section">
             <div class="container">
@@ -357,13 +395,14 @@
                     
                 </ul>
             </div>
-        </section>
+        </section> 
 
     </main>
     <!--footer-->
     <footer class="footer">
         <div class="footer__content container">
-           
+            
+           <div class="footer__tablet">
             <div class="footer__box">
                 <a href="" class="logo">Web<span class="footer__logo">Studio</span> </a>
                 <address class="footer__address">
@@ -379,7 +418,7 @@
                 </address>
             </div>
 
-            <div class="footer__box">
+            <div class="footer__box footer__blok">
                 <p class="footer__title">присоединяйтесь</p>
 
                 <ul class="icon list">
@@ -414,6 +453,8 @@
                 </ul>
             
             </div>
+            </div>
+            
             
             <div class="footer__block">
                 <p class="footer__title">Подпишитесь на рассылку</p>
@@ -491,6 +532,8 @@
             </form>
         </div>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
