@@ -98,8 +98,10 @@
   color: var(--accent-text-colour);
 }
 
-.mobile-auth__tel {
-  margin-top: 302px;
+.mobile-auth {
+  // margin-top: 302px;
+  margin-top: auto;
+  margin-bottom: 64px;
 }
 
 .mobile-auth__tel {
@@ -112,7 +114,6 @@
 
 .mobile-auth__mail {
   margin-top: 32px;
-  margin-bottom: 64px;
 }
 
 .mobile-auth__mail {
@@ -125,6 +126,7 @@
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-social__item:not(:last-child) {
