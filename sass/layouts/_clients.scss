@@ -6,9 +6,7 @@
 }
 
 .client__item {
-  @media screen and (min-width: 480px) {
-    flex-basis: calc((100% - 30px) / 2);
-  }
+  flex-basis: calc((100% - 30px) / 2);
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px * 2) / 3);
@@ -26,7 +24,6 @@
   justify-content: center;
   align-items: center;
 
-  width: 210px;
   height: 90px;
 
   color: var(--icon-grey-color);
@@ -42,6 +39,13 @@
   &:focus {
     color: var(--accent-text-colour);
     border: 1px solid var(--accent-text-colour);
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 210px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
   }
 
   @media screen and (min-width: 768px) {
