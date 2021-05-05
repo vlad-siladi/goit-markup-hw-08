@@ -47,6 +47,10 @@
 }
 
 .feature__title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
   margin-top: 0;
   margin-bottom: 10px;
 
