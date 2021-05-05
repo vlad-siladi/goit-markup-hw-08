@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 110;
   top: 0;
   left: 0;
   width: 100%;
@@ -17,12 +18,6 @@
 }
 
 .modal {
-  position: fixed;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   background-color: var(--primary-white-colour);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,6 +25,12 @@
 
   @media screen and (min-width: 480px) {
     min-width: 450px;
+
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media screen and (min-width: 1200px) {
@@ -39,20 +40,27 @@
 }
 
 .modal__button {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: absolute;
+  top: 101px;
+  right: 23px;
+  margin-left: 0;
+  margin-right: 0;
 
-  top: 8px;
-  right: 8px;
   width: 30px;
   height: 30px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--primary-white-colour);
+
+  @media screen and (min-width: 480px) {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .modal__icon {
