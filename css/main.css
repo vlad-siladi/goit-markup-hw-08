@@ -402,26 +402,20 @@ img {
 
 .menu-button__icon-close {
   display: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:hover .menu-button__icon-close,
+.menu-button:focus .menu-button__icon-close {
+  fill: var(--accent-text-colour);
 }
 
 .is-open .menu-button__icon-close {
   display: block;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-button:hover .is-open .menu-button__icon-close,
-.menu-button:focus .is-open .menu-button__icon-close {
-  fill: var(--accent-text-colour);
 }
 
 .is-open .menu-button__icon-menu {
   display: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-button:hover .is-open .menu-button__icon-menu,
-.menu-button:focus .is-open .menu-button__icon-menu {
-  fill: var(--accent-text-colour);
 }
 
 .mobile-menu {

@@ -26,27 +26,22 @@
 
 .menu-button__icon-close {
   display: none;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: var(--accent-text-colour);
+  }
 }
 
 .is-open {
   .menu-button__icon-close {
     display: block;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .menu-button:hover &,
-    .menu-button:focus & {
-      fill: var(--accent-text-colour);
-    }
   }
 
   .menu-button__icon-menu {
     display: none;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .menu-button:hover &,
-    .menu-button:focus & {
-      fill: var(--accent-text-colour);
-    }
   }
 }
 
